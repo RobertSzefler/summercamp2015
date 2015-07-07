@@ -26,7 +26,7 @@ For each table, you can obtain information about its structure using::
 You can then take a look at the simple template for writing solutions to the exercises.
 It just contains some boiler plate code to connect with the db etc. It's here_.
 
-.. _here: https://github.com/RobertSzefler/summercamp2015/blob/master/dbapi_kata_template.py
+.. _here: https://github.com/RobertSzefler/summercamp2015/blob/master/examples/dbapi_kata_template.py
 
 Task 1: Lone persons
 --------------------
