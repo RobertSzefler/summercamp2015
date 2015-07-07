@@ -19,6 +19,10 @@ For each table, you can obtain information about its structure using::
 
 (for the full `CREATE TABLE` statement - includes foreign key information etc).
 
+You can then take a look at the simple template for writing solutions to the exercises.
+It just contains some boiler plate code to connect with the db etc. It's here_.
+
+.. _here: https://github.com/RobertSzefler/summercamp2015/blob/master/dbapi_kata_template.py
 
 Task 1: Lone persons
 --------------------
@@ -28,9 +32,9 @@ alphabetic order.
 
 Tips:
 
-- `UNION` is your friend
+- ``UNION`` is your friend
 - a subquery is OK
-- maybe use a `LEFT JOIN`?
+- maybe use a ``LEFT JOIN``?
 
 
 Task 2: Account statistics
@@ -41,8 +45,8 @@ account balances, together with their balances.
 
 Tips:
 
-- you will need a `JOIN`
-- average is just `AVG` :)
+- you will need a ``JOIN``
+- average is just ``AVG`` :)
 
 
 Task 3: FOAF 
@@ -54,7 +58,7 @@ specified person.
 
 Tips:
 
-- sometimes you just need more than one `JOIN`
+- sometimes you just need more than one ``JOIN``
 - for simplicity you can assume that the "friends" relation is one way only, ie that
-  you find a person's friends by select rows from the `friends` table with a match on
-  `person1_id` only
+  you find a person's friends by select rows from the ``friends`` table with a match on
+  ``person1_id`` only
