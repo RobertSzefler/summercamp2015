@@ -1,0 +1,6 @@
+sudo mysql -e "grant usage on '*.*' to 'test'@'localhost';"
+sudo mysql -e "drop user 'test'@'localhost';"
+sudo mysql -e "create user 'test'@'localhost' identified by test;"
+sudo mysql -e "drop database if exists test;"
+sudo mysql -e "create database test;"
+sudo mysql -e "grant all on 'test.*' to 'test';"
