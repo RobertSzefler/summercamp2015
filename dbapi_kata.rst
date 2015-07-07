@@ -17,7 +17,7 @@ For each table, you can obtain information about its structure using::
 
     SHOW CREATE TABLE table_name;
 
-(for the full `CREATE TABLE` statement - includes foreign key information etc).
+(for the full ``CREATE TABLE`` statement - includes foreign key information etc).
 
 You can then take a look at the simple template for writing solutions to the exercises.
 It just contains some boiler plate code to connect with the db etc. It's here_.
