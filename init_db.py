@@ -48,7 +48,9 @@ cursor.execute('''CREATE TABLE accounts(person_id INTEGER NOT NULL UNIQUE, balan
 for n in range(30):
     p1 = random.randint(1, 26)
     p2 = random.randint(1, 26)
-    cursor.execute('INSERT INTO friends(person1_id, person2_id) VALUES (%s, %s)', (p1, p2))
+    cursor.execute('INSERT INTO friends(person1_id, person2_id) VALUES (%s, %s)', [p1, p2])
 
 for n in range(1, 27):
-    cursor.execute('INSERT INTO accounts(person_id, balance) VALUES (%s, %s)', (n, random.randint(0,1000000)/10000.0))
+    cursor.execute('INSERT INTO accounts(person_id, balance) VALUES (%s, %s)', [n, random.randint(0,1000000)/10000.0])
+
+cursor.execute('COMMIT;')

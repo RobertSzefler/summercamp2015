@@ -5,7 +5,7 @@ Log in to the freshly created mysql database using the command-line `mysql` util
 
     mysql -u test --password=test test
 
-Take a look at how the database is organized. You can start with listing all tables:
+Take a look at how the database is organized. You can start with listing all tables::
 
     SHOW TABLES;
 
@@ -20,17 +20,35 @@ For each table, you can obtain information about its structure using::
 (for the full `CREATE TABLE` statement - includes foreign key information etc).
 
 
-Task 2: Lone persons
+Task 1: Lone persons
 --------------------
 
-Write a `SELECT` query that lists the names of persons that don't have friends.
+Write a python script that lists the names of persons that don't have friends.
 
 Tips:
 
-- SQL `SUM` operator might come in handy
+- SQL `UNION` operator might come in handy
 
 
-Task 3: ?
----------
+Task 2: Account statistics
+--------------------------
 
-TODO
+Write a python script that lists the names of persons that have below-average
+account balances, together with their balances.
+
+Tips:
+
+- you will need a `JOIN`
+- average is just `AVG` :)
+
+
+Task 3: FOAF 
+------------
+
+Write a python script that, for a person name specified on the command line as the
+sole argument, will find the richest person between friends-of-a-friend of that
+specified person.
+
+Tips:
+
+- sometimes you just need more than one `JOIN`
