@@ -18,7 +18,7 @@ your code with some simple queries, for example::
 
     print(session.query(Model).count())
 
-You don't need to implement foreign keys at this moment.
+You don't need to implement foreign keys and other constraints at this moment.
 
 
 Task 2: Defriendizer
@@ -37,3 +37,12 @@ Tips:
 
 Task 3: Get creative
 --------------------
+
+Idea one: extend our person model to have a second name column and a unique constraint spanning
+both first and second name.
+
+Idea two: implement, using SQLAlchemy, the many-to-many mapping that is present in the database
+in table `friends`. Include backrefs for convenient access. SQLAlchemy provides a pretty decent
+documentation_ on how to do this.
+
+.. _documentation: http://docs.sqlalchemy.org/en/rel_1_0/orm/basic_relationships.html#many-to-many
