@@ -46,7 +46,6 @@ session.query(Person).filter(Person.name=='Phoebe').delete()
 with session.begin_nested():
     new_person = Person(name='Marylin', age=33)
     session.add(new_person)
-    session.flush()
 
 try:
     # this will fail and both will roll back
