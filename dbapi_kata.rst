@@ -28,7 +28,9 @@ alphabetic order.
 
 Tips:
 
-- SQL `UNION` operator might come in handy
+- `UNION` is your friend
+- a subquery is OK
+- maybe use a `LEFT JOIN`?
 
 
 Task 2: Account statistics
@@ -53,3 +55,6 @@ specified person.
 Tips:
 
 - sometimes you just need more than one `JOIN`
+- for simplicity you can assume that the "friends" relation is one way only, ie that
+  you find a person's friends by select rows from the `friends` table with a match on
+  `person1_id` only
