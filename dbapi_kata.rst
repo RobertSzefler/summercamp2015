@@ -23,7 +23,8 @@ For each table, you can obtain information about its structure using::
 Task 1: Lone persons
 --------------------
 
-Write a python script that lists the names of persons that don't have friends.
+Write a python script that lists the names of persons that don't have friends, in
+alphabetic order.
 
 Tips:
 
