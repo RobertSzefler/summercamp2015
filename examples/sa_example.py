@@ -21,3 +21,10 @@ print('Query:\n{}\n------'.format(filtered_persons))
 
 for person in filtered_persons:
     print(person.name)
+
+print('------')
+
+other_persons = session.query(Person).filter(Person.name.ilike('%la%'))
+
+for person in other_persons:
+    print(person.name)

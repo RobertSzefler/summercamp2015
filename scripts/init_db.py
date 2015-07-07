@@ -1,7 +1,9 @@
 import random
+import warnings
 
 from dbapi_common import cursor
 
+warnings.filterwarnings("ignore", "Unknown table.*")
 
 random.seed(1234)
 cursor = cursor()
