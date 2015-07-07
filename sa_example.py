@@ -11,7 +11,13 @@ class Person(Base):
     name = Column(String)
 
 
-persons = session.query(Person).filter(Person.name > 'Leonardo').order_by(Person.name)
+all_persons = session.query(Person)
+filtered_persons = session.query(Person).filter(Person.name > 'Leonardo').order_by(Person.name)
 
-for person in persons:
+
+print('COUNT(*): {}\n------'.format(all_persons.count()))
+print('Filtered COUNT(*): {}\n------'.format(filtered_persons.count()))
+print('Query:\n{}\n------'.format(filtered_persons))
+
+for person in filtered_persons:
     print(person.name)
