@@ -24,7 +24,8 @@ You don't need to implement foreign keys at this moment.
 Task 2: Defriendizer
 --------------------
 
-Write a python script that, for two person names specified on the command line as arguments, will make them non-friends. This time do it SQLAlchemy-style :)
+Write a python script that, for two person names specified on the command line as arguments,
+will make them non-friends. This time do it SQLAlchemy-style :)
 
 Tips:
 
@@ -32,3 +33,7 @@ Tips:
 - you need to make sure that either the connection is made in the autocommit mode,
   or you add an explicit commit after the delete operation; otherwise it will be
   rolled back and no change will be applied to the database
+
+
+Task 3: Get creative
+--------------------
