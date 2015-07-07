@@ -34,7 +34,7 @@ Tips:
 
 - ``UNION`` is your friend
 - a subquery is OK
-- maybe use a ``LEFT JOIN``?
+- maybe use a ``LEFT JOIN`` as an alternative?
 
 
 Task 2: Account statistics
@@ -62,3 +62,10 @@ Tips:
 - for simplicity you can assume that the "friends" relation is one way only, ie that
   you find a person's friends by select rows from the ``friends`` table with a match on
   ``person1_id`` only
+
+
+Task 4: Defriendizer
+--------------------
+
+Write a python script that, for two person names specified on the command line as
+arguments, will make them non-friends.
