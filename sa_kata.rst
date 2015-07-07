@@ -16,4 +16,4 @@ Task 1: Models
 Write SQLAlchemy model definitions for the two remaining tables in the database. Test
 your code with some simple queries, for example::
 
-    print session.query(Model).count()
+    print(session.query(Model).count())
