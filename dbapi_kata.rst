@@ -1,3 +1,7 @@
+The DBAPI kata
+==============
+
+
 Task 0: Look around
 -------------------
 
